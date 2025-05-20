@@ -35,6 +35,7 @@
             #binding-cells = <2>;
             tapping-term-ms = <300>;
             flavor = "tap-unless-interrupted";
+            require-prior-idle-ms = <50>;
             bindings = <&kp>, <&kp>;
         };
         hml: homerow_shift_left {
@@ -42,7 +43,7 @@
             #binding-cells = <2>;
             tapping-term-ms = <275>;
             flavor = "tap-preferred";
-            require-prior-idle-ms = <70>;
+            require-prior-idle-ms = <50>;
             bindings = <&kp>, <&kp>;
         };
     };
