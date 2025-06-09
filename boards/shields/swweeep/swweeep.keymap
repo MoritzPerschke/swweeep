@@ -134,14 +134,5 @@
                                            &trans        &kp SPACE  &trans             &to DEFAULT  &to DEFAULT      &to DEFAULT
             >;
         };
-
-        wasd_main_layer {
-            bindings = <
-    &kp TAB      &kp Q    &kp W    &kp E            &kp R                                                 &kp Y         &kp U         &kp I         &kp O        &kp P
-    &kp SHIFT    &kp A    &kp S    &kp D            &kp F                                                 &kp H         &kp J         &kp K         &kp L        &kp SEMI
-    &kp LCTL     &kp Z    &kp X    &kp C            &kp V                                                 &kp N         &kp M         &kp COMMA     &kp DOT      &to DEFAULT
-                                   &lt DEFAULT ESC  &kp SPACE  &LCTL                            &kp BSPC  &kp SPACE     &kp SQT
-            >;
-        };
     };
 };
