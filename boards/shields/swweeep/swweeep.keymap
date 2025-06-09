@@ -14,6 +14,7 @@
 #define LOL_MAIN  7
 #define LOL_AUX   8
 #define WASD_MAIN 9
+#define WASD_AUX  10
 
 &caps_word {
     continue-list = <UNDERSCORE MINUS BACKSPACE>;
@@ -137,10 +138,20 @@
 
         wasd_main_layer {
             bindings = <
-    &kp TAB       &kp Q    &kp W    &kp E            &kp R                                          &kp Y         &kp U         &kp I         &kp O        &kp P
-    &kp LSHIFT    &kp A    &kp S    &kp D            &kp F                                          &kp H         &kp J         &kp K         &kp L        &kp SEMI
-    &kp LCTL      &kp Z    &kp X    &kp C            &kp V                                          &kp N         &kp M         &kp COMMA     &kp DOT      &to FSLH
-                                    &lt DEFAULT ESC  &kp SPACE  &kp LCTL                  &kp BSPC  &to DEFAULT   &kp SQT
+    &kp TAB       &kp Q    &kp W    &kp E             &kp R                                          &kp Y         &kp U         &kp I         &kp O        &kp P
+    &kp LSHIFT    &kp A    &kp S    &kp D             &kp F                                          &kp H         &kp J         &kp K         &kp L        &kp SEMI
+    &kp LCTL      &kp Z    &kp X    &kp C             &kp V                                          &kp N         &kp M         &kp COMMA     &kp DOT      &to FSLH
+                                    &lt WASD_AUX ESC  &kp SPACE  &kp LCTL                  &kp BSPC  &to DEFAULT   &kp SQT
+            >;
+        };
+
+        // since 'default' is the "lowest priority layer" i need to replicate it here to get the leftmost thumbkey on 'wasd_main_layer' to work
+        wasd_aux_layer {
+            bindings = <
+    &kp Q        &kp W        &kp E       &kp R         &lt NUMRHT T                                 &lt NUMLFT Y  &kp U         &kp I         &kp O        &kp P
+    &hml LCTL A  &hml LGUI S  &hml LALT D &hml LSHIFT F &kp G                                        &kp H         &hmr RSHIFT J &hmr RALT K   &hmr RGUI L  &hmr RCTL SEMI
+    &kp Z        &kp X        &kp C       &kp V         &kp B                                        &kp N         &kp M         &kp COMMA     &kp DOT      &kp FSLH
+                                          &kp DEL       &lt NAV RET  &lt FUNC TAB          &kp BSPC  &lt SYM SPACE &lt BLT SQT
             >;
         };
     };
