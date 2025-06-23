@@ -37,7 +37,7 @@
         hmr: homerow_mods_right {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            tapping-term-ms = <300>;
+            tapping-term-ms = <250>;
             flavor = "tap-unless-interrupted";
             require-prior-idle-ms = <50>;
             bindings = <&kp>, <&kp>;
@@ -45,7 +45,7 @@
         hml: homerow_shift_left {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            tapping-term-ms = <300>;
+            tapping-term-ms = <250>;
             flavor = "tap-preferred";
             require-prior-idle-ms = <50>;
             bindings = <&kp>, <&kp>;
