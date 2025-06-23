@@ -4,6 +4,9 @@ manifest:
       url-base: https://github.com/zmkfirmware
     - name: sadekbaroudi
       url-base: https://github.com/sadekbaroudi
+    ### Added for experimental nice!view support
+    - name: m165437
+      url-base: https://github.com/M165437
     # Note: This is only included because the feat/pointers-move-scroll isn't merged into
     #       ZMK main yet. Once it's merged, you no longer need this.
     #- name: petejohanson
@@ -17,5 +20,8 @@ manifest:
       remote: sadekbaroudi
       revision: main
       import: config/deps.yml
+    - name: nice-view-gem
+      remote: m165437
+      revision: main
   self:
     path: config
