@@ -15,7 +15,9 @@
 include:
   - board: nice_nano//zmk
     shield: swweeep_left nice_view_adapter nice_view_gem
+    cmake-args: -DKEYMAP_FILE=/__w/swweeep/swweeep/boards/shields/swweeep/swweeep.keymap
   - board: nice_nano//zmk
     shield: swweeep_right nice_view_adapter nice_view_gem
+    cmake-args: -DKEYMAP_FILE=/__w/swweeep/swweeep/boards/shields/swweeep/swweeep.keymap
   - board: nice_nano//zmk
     shield: settings_reset
